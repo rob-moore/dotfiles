@@ -1,5 +1,6 @@
 source ~/.zplug/init.zsh
 
+
 # Prezto Modules
 zplug "modules/completion", from:prezto
 zplug "modules/history", from:prezto
@@ -66,3 +67,9 @@ fi
 
 # Then, source plugins and add commands to $PATH
 zplug load --verbose
+
+#Cool aliases
+source $HOME/.aliases
+
+
+
