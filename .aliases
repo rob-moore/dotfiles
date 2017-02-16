@@ -209,3 +209,4 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # npm install stuff
 alias nis="npm install --save"
 alias nid="npm install --save-dev"
+alias nig="npm install -g"

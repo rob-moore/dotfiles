@@ -96,7 +96,7 @@ fi
 
 
 #Cool aliases
-source $HOME/.zsh_aliases
+source $HOME/.aliases
 
 
 
