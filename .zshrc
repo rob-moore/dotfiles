@@ -65,11 +65,38 @@ else
   zplug load
 fi
 
+
 # Then, source plugins and add commands to $PATH
 zplug load --verbose
 
+
+#SSH stuff
+if [ $(ssh-add -l | grep -c "The agent has no identities." ) -eq 1 ]; then
+  if [[ "$(uname -s)" == "Darwin" ]]; then
+    # We're on OS X. Try to load ssh keys using pass phrases stored in
+    # the OSX keychain.
+    #
+    # You can use ssh-add -K /path/to/key to store pass phrases into
+    # the OSX keychain
+    ssh-add -k
+  fi
+fi
+
+if [ -f ~/.ssh/id_rsa ]; then
+  if [ $(ssh-add -l | grep -c ".ssh/id_rsa" ) -eq 0 ]; then
+    ssh-add ~/.ssh/id_rsa
+  fi
+fi
+
+if [ -f ~/.ssh/id_dsa ]; then
+  if [ $(ssh-add -L | grep -c ".ssh/id_dsa" ) -eq 0 ]; then
+    ssh-add ~/.ssh/id_dsa
+  fi
+fi
+
+
 #Cool aliases
-source $HOME/.aliases
+source $HOME/.zsh_aliases
 
 
 
