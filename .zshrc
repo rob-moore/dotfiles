@@ -27,6 +27,8 @@ zplug "junegunn/fzf", from:github, use:shell/key-bindings.zsh
 zplug "stedolan/jq", from:gh-r, as:command, if:"(( ! $+commands[jq] ))", rename-to:jq
 
 
+## Z ##
+zplug "rupa/z", from:github, use:z.sh
 
 ### SSH ###
 zplug "hkupty/ssh-agent", from:github
@@ -96,7 +98,4 @@ fi
 
 
 #Cool aliases
-source $HOME/.aliases
-
-
-
+source $HOME/.zsh_aliases
