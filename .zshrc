@@ -99,3 +99,4 @@ fi
 
 #Cool aliases
 source $HOME/.zsh_aliases
+export PATH="$HOME/.yarn/bin:$PATH"
