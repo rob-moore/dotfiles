@@ -1,0 +1,12 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontFamily": "Hack",
+    "editor.fontSize": 14,
+    "html.format.wrapLineLength": 0,
+    "editor.wordWrap": "off",
+    "extensions.autoUpdate": true,
+    "eslint.autoFixOnSave": true,
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "vs-seti",
+    "typescript.check.tscVersion": false
+}
