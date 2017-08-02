@@ -188,6 +188,7 @@ if [ -x /usr/local/bin/mysql/bin/mysqladmin ]; then
   alias mysqladmin="/usr/local/mysql/bin/mysqladmin"
 fi
 
+# Make navigating file structures not awful
 alias ..="cd .."
 alias ...="cd ../.."
 
