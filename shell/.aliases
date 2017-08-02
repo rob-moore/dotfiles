@@ -36,8 +36,10 @@ if [[ "$(uname -s)" == "Darwin" ]]; then
   alias spotlighter="mdfind -onlyin `pwd`"
   alias top="TERM=vt100 top"
 
-  # Sublime
+  # IDE Stuff
   alias s="subl"
+  alias a="atom"
+  alias c="code"
 
   # Manually remove a downloaded app or file from the quarantine
   function unquarantine() {
@@ -201,6 +203,7 @@ fi
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
-# npm install stuff
+# npm/yarn install stuff
 alias nis="npm install --save"
 alias nid="npm install --save-dev"
+alias ya="yarn add"
